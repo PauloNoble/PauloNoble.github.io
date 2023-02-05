@@ -1,0 +1,62 @@
+
+/*
+h1{
+    font-family:'Roboto', sans-serif;
+    color: red;
+    border: 2px white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#titulo{
+    font-style: italic;
+    color: aliceblue;
+}
+
+.cont-ppal{
+    background-image: url(imgFondo.jpg);
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.tarjeta{
+    position: center; 
+    padding: 50px 0;
+    width: 50%;
+    background: rgb(22, 235, 235);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 5;
+    background-image: linear-gradient(to right, rgb(55, 175, 245) , yellow);
+    margin: auto;
+}
+
+img{
+    border-radius: 25%;
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.menu{
+    text-align: center;
+}
+
+button{
+    background-color: aquamarine;
+}
+
+.info{
+    color: brown;
+}
+
+*/
