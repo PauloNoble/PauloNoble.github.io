@@ -8,59 +8,134 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>  
-         <!--ENCABEZADO/MENU-->
+<body>
 
-         <div class="contenedor-heder">
-            <header>
-                <div class="logo">
-                    <a href="#inicio">Paulo Damián Noble</a>
-                </div>
-                <nav id="nav">
+    <main class="contenedor-principal">
+        <section class="seccion-izquierda">
+          <div class="contenedor-izquierdo">
+             <div class="perfil">
+                    <img src="images/avatar.jpg" alt="foto de perfil">
+                    <h1 class="nombre">Homero Simpson</h1>
+                    <p class="carrera">Desarrollador Web</p>
+             </div>
+          
+                <div class="info-cont">
+                    <h3 class="titulo-principal">Informacion de contacto</h3>
                     <ul>
                         <li>
-                            <a href="#inicio" onclick="seleccionar()">INICIO</a>
+                            <i class="fa fa-phone"></i>
+                                +549 341-5284624
                         </li>
                         <li>
-                            <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a>
+                            <i class="fa fa-fax"></i>
+                            homero_simpson@gmail.com
                         </li>
                         <li>
-                            <a href="#skills" onclick="seleccionar()">SKILLS</a>
+                            <i class="fa fa-globe"></i>
+                                www.homerosimpson.com
                         </li>
                         <li>
-                            <a href="#curriculum" onclick="seleccionar()">CV</a>
+                            <i class="fa fa-facebook"></i>
+                                www.facebook.com/homero
                         </li>
                         <li>
-                            <a href="#contacto" onclick="seleccionar()">CONTACTO</a>
+                            <i class="fa fa-instagram"></i>
+                                @homero_simpson
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                                 Av. Siempreviva 742, Springfiel (EE.UU) 
                         </li>
                     </ul>
-                </nav>
-                <div class="nav-responsive" onclick="mostrarOcultarMenu">
-                <i class="fa-solid fa-bars"></i>
                 </div>
-            </header>
-         </div>
+                <div class="seccion-skills">
+                    <h3 class="titulo-principal">Skills</h3>
+                    <ul>
+                        <li>
+                            <p class="titulo-skill">Javascript</p>
+                            <div class="barra-progreso">
+                                <div class="progreso js-progreso">
 
-         <!--SECCION INICIO-->
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="titulo-skill">CSS</p>
+                            <div class="barra-progreso">
+                                <div class="progreso css-progreso">
 
-         <section id="inicio" class="inicio">
-            <div class="contenido-tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="images/fotoCv.jpeg" alt="fotoCv">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="titulo-skill">HTML</p>
+                            <div class="barra-progreso">
+                                <div class="progreso html-progreso">
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="titulo-skill">Java</p>
+                            <div class="barra-progreso">
+                                <div class="progreso java-progreso">
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="titulo-skill">Node Js</p>
+                            <div class="barra-progreso">
+                                <div class="progreso nodejs-progreso">
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <h1>Paulo Damián Noble</h1>
-                <h2>Desarrollador Web 
-                    <br>
-                    QA Tester
-                </h2>
-                <div class="redes"></div>
+                <div class="seccion-referencias">
+                    <h3 class="titulo-principal">Referencias</h3>
+                    <div class="ref"> 
+                        <h6 class="subtitulo">Sr. Burns</h6>
+                        <p class="sub-parrafo">Product Manager</p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                    +549 341-6584213
+                            </li>
+                            <li>
+                                <i class="fa fa-fax"></i>
+                                sr_burns@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ref"> 
+                        <h6 class="subtitulo">Jefe Gorgory</h6>
+                        <p class="sub-parrafo">Senior Developer</p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                    +549 341-4558764
+                            </li>
+                            <li>
+                                <i class="fa fa-fax"></i>
+                                gorgory@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-         </section>
-            
-            
+        </section>
 
-      
+        <section class="seccion-derecha">
+            <div class="contenido-principal-derecho">
+                <h2 class="titulo-derecho">Acerca de mí</h2>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

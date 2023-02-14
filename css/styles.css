@@ -1,62 +1,170 @@
 
-/*
-h1{
-    font-family:'Roboto', sans-serif;
-    color: red;
-    border: 2px white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
 }
 
-#titulo{
-    font-style: italic;
-    color: aliceblue;
+body{
+    background-color: rgb(85, 245, 245);
 }
 
-.cont-ppal{
-    background-image: url(imgFondo.jpg);
-    background-color: aquamarine;
+.contenedor-principal{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.seccion-izquierda{
+    grid-column: span 2;
+    height: 100%;
+    background-color: rgb(10, 37, 112);
+}
+
+.seccion-derecha{
+    grid-column: span 5;
+    height: 100%;
+    background-color: rgb(220, 220, 224);
+}
+
+.contenedor-izquierdo{
+    padding: 2rem 3rem;
+}
+
+.perfil{
     width: 100%;
-    height: 100vh; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover; 
+    border-bottom: 1px solid rgb(220, 220, 224);
 }
-.tarjeta{
-    position: center; 
-    padding: 50px 0;
+
+.perfil img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid rgb(3, 124, 124);
+}
+
+.nombre{
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;    
+}
+
+.carrera{
+    font-size: 1rem;
+    color: rgb(85, 245, 245);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.titulo-principal{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    padding-top: 3rem;
+}
+
+.info-cont ul{
+    padding-top: 2rem;
+}
+
+.info-cont ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.info-cont ul li i{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: rgb(114, 114, 245);
+}
+
+.seccion-skills ul{
+    padding-top: 2rem;
+}
+
+.seccion-skills ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+}
+
+.barra-progreso{
+    width: 100%;
+    height: .4rem;
+    background-color:rgb(136, 135, 135);
+    position: relative;
+    border-radius: 12px;
+
+}
+
+.progreso{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+.js-progreso{
+    width: 70%;
+}
+
+.css-progreso{
+    width: 90%;
+}
+
+.html-progreso{
+    width: 95%;
+}
+
+.java-progreso{
+    width: 60%;
+}
+
+.nodejs-progreso{
     width: 50%;
-    background: rgb(22, 235, 235);
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    z-index: 5;
-    background-image: linear-gradient(to right, rgb(55, 175, 245) , yellow);
-    margin: auto;
 }
 
-img{
-    border-radius: 25%;
-    width: 15%;
-    height: 15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+.titulo-skill{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1rem;
 }
 
-.menu{
-    text-align: center;
+.subtitulo{
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: whitesmoke;
 }
 
-button{
-    background-color: aquamarine;
+.sub-parrafo{
+    color: aliceblue;
+    padding: .4rem 0;
 }
 
-.info{
-    color: brown;
+.seccion-referencias li{
+    color: aliceblue;
+    padding: .2rem 0;
 }
 
-*/
+.seccion-referencias li i{
+    padding-right: .5rem;
+    font-size: 1.2rem;
+    color: rgb(114, 114, 245);
+}
+
+.contenido-principal-derecho{
+    padding: 2rem 3rem;
+}
