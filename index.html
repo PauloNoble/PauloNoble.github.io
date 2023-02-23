@@ -10,13 +10,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/00fef72746.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <div class="navegador">
+            <nav>
+                <div class="enlaces" id="inicio">
+                    <!--<ul>
+                        <li><a href="#perfil" class="inicio">inicio</a></li>
+                        <li><a href="#contacto" class="contacto">contacto</a></li>
+                        <li><a href="#skills" class="skills">skills</a></li>
+                        <li><a href="#referencias" class="referencias">referencias</a></li>
+                        <li><a href="#acerca" class="acerca">acerca de mi</a></li>
+                        <li><a href="#experiencia" class="experiencia">experiencia</a></li>
+                        <li><a href="#educacion" class="educacion">educación</a></li>
+                        <li><a href="#idiomas" class="idiomas">idiomas</a></li>
+                    </ul>-->
+                    <a href="#perfil" class="inicio">inicio</a>
+                    <a href="#contacto" class="contacto">contacto</a>
+                    <a href="#skills" class="skills">skills</a>
+                    <a href="#referencias" class="referencias">referencias</a>
+                    <a href="#acerca" class="acerca">acerca de mi</a>
+                    <a href="#experiencia" class="experiencia">experiencia</a>
+                    <a href="#educacion" class="educacion">educación</a>
+                    <a href="#idiomas" class="idiomas">idiomas</a>
+                    <button class="switch" id="switch">
+                        <span class="span"><i class="fa-solid fa-sun"></i></span>
+                        <span class="span"><i class="fa-solid fa-moon"></i></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
     <main class="contenedor-principal">
         <section class="seccion-izquierda">
           <div class="contenedor-izquierdo">
-             <div class="perfil">
+             <div class="perfil" id="perfil">
                     <div class="imagen">
                         <img src="images/avatar.jpg" alt="foto de perfil">
                     </div>
@@ -24,15 +53,15 @@
                     <p class="carrera">Desarrollador Web</p>
              </div>
           
-                <div class="info-cont">
+                <div class="info-cont" id="contacto">
                     <h3 class="titulo-principal">Informacion de contacto</h3>
                     <ul>
                         <li>
-                            <i class="fa fa-phone"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
                                 +549 341-5284624
                         </li>
                         <li>
-                            <i class="fa fa-fax"></i>
+                            <i class="fa-brands fa-google"></i>
                             homero_simpson@gmail.com
                         </li>
                         <li>
@@ -40,11 +69,11 @@
                                 www.homerosimpson.com
                         </li>
                         <li>
-                            <i class="fa fa-facebook"></i>
+                            <i class="fa-brands fa-facebook"></i>
                                 www.facebook.com/homero
                         </li>
                         <li>
-                            <i class="fa fa-instagram"></i>
+                            <i class="fa-brands fa-instagram"></i>
                                 @homero_simpson
                         </li>
                         <li>
@@ -53,7 +82,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="seccion-skills">
+                <div class="seccion-skills" id="skills">
                     <h3 class="titulo-principal">Skills</h3>
                     <ul>
                         <li>
@@ -114,7 +143,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="seccion-referencias">
+                <div class="seccion-referencias" id="referencias">
                     <h3 class="titulo-principal">Referencias</h3>
                     <div class="ref"> 
                         <h6 class="subtitulo">Sr. Burns</h6>
@@ -151,7 +180,7 @@
         <section class="seccion-derecha">
             <div class="contenido-principal-derecho">
                 <section class="acerca secc">
-                    <h2 class="titulo-derecho">Acerca de mí</h2>
+                    <h2 class="titulo-derecho" id="acerca">Acerca de mí</h2>
                     <p class="parr">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Vel, beatae nulla molestias ad sapiente nam ex quia totam optio error, 
                         rerum quidem deserunt libero incidunt porro quaerat veritatis dignissimos nemo! <br>
@@ -161,7 +190,7 @@
                         Illum dolorem quo unde odit perferendis? Alias, aspernatur tenetur!
                     </p>
                 </section>
-                <section class="expreciencia secc">
+                <section class="seccion-expreciencia" id="experiencia">
                     <h2 class="titulo-derecho">Expreciencia</h2>
                     <div class="cronologia">
                         <div class="cont-crono-izquierdo">
@@ -204,7 +233,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="expreciencia secc">
+                <section class="seccion-educacion" id="educacion">
                     <h2 class="titulo-derecho">Educación</h2>
                     <div class="cronologia">
                         <div class="cont-crono-izquierdo">
@@ -258,26 +287,27 @@
                             </div>
                         </div>
                     </div>
-                    <section class="premios secc">
-                        <h2 class="titulo-derecho">Idioma</h2>
-                    <div class="cronologia">
-                        <div class="cont-crono-izquierdo">
-                            <h5 class="titulo-crono">Instituto del Idioma</h5>
-                            <p class="parr">2015 - 2018</p>
-                        </div>
-                        <div class="cont-crono-derecho">
-                            <div class="cont-crono">
-                                <h5 class="titulo-crono-2">Certificación Ingles B2</h5>
-                                <p class="parr">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Doloremque earum harum tenetur maiores eius rem dolorem magnam veritatis.</p>
+                    <section class="seccion-idiomas" id="idiomas">
+                        <h2 class="titulo-derecho">Idiomas</h2>
+                        <div class="cronologia">
+                            <div class="cont-crono-izquierdo">
+                                <h5 class="titulo-crono">Instituto del Idioma</h5>
+                                <p class="parr">2015 - 2018</p>
+                            </div>
+                            <div class="cont-crono-derecho">
+                                <div class="cont-crono">
+                                    <h5 class="titulo-crono-2">Certificación Ingles B2</h5>
+                                    <p class="parr">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Doloremque earum harum tenetur maiores eius rem dolorem magnam veritatis.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    </section>
+                    </section>    
+                </div>
                 </section>
             </div>
         </section>
     </main>
-
+    <script src="js/scripts.js"></script>
 </body>
 </html>
