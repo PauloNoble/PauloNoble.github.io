@@ -14,34 +14,33 @@
 </head>
 <body>
 
-    <div class="navegador">
-            <nav>
-                <div class="enlaces" id="inicio">
-                    <!--<ul>
-                        <li><a href="#perfil" class="inicio">inicio</a></li>
-                        <li><a href="#contacto" class="contacto">contacto</a></li>
-                        <li><a href="#skills" class="skills">skills</a></li>
-                        <li><a href="#referencias" class="referencias">referencias</a></li>
-                        <li><a href="#acerca" class="acerca">acerca de mi</a></li>
-                        <li><a href="#experiencia" class="experiencia">experiencia</a></li>
-                        <li><a href="#educacion" class="educacion">educación</a></li>
-                        <li><a href="#idiomas" class="idiomas">idiomas</a></li>
-                    </ul>-->
-                    <a href="#perfil" class="inicio">inicio</a>
-                    <a href="#contacto" class="contacto">contacto</a>
-                    <a href="#skills" class="skills">skills</a>
-                    <a href="#referencias" class="referencias">referencias</a>
-                    <a href="#acerca" class="acerca">acerca de mi</a>
-                    <a href="#experiencia" class="experiencia">experiencia</a>
-                    <a href="#educacion" class="educacion">educación</a>
-                    <a href="#idiomas" class="idiomas">idiomas</a>
-                    <button class="switch" id="switch">
-                        <span class="span"><i class="fa-solid fa-sun"></i></span>
-                        <span class="span"><i class="fa-solid fa-moon"></i></span>
-                    </button>
-                </div>
+    <div class="cont-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Homero Simpson</a>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#perfil" class="inicio">inicio</a></li>
+                    <li><a href="#contacto" class="contacto">contacto</a></li>
+                    <li><a href="#skills" class="skills">skills</a></li>
+                    <li><a href="#referencias" class="referencias">referencias</a></li>
+                    <li><a href="#acerca" class="acerca">acerca de mi</a></li>
+                    <li><a href="#experiencia" class="experiencia">experiencia</a></li>
+                    <li><a href="#educacion" class="educacion">educación</a></li>
+                    <li><a href="#idiomas" class="idiomas">idiomas</a></li>
+                </ul>
             </nav>
-        </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <button class="switch" id="switch">
+                <span class="span"><i class="fa-solid fa-sun"></i></span>
+                <span class="span"><i class="fa-solid fa-moon"></i></span>
+            </button>
+        </header>
+    </div>
     <main class="contenedor-principal">
         <section class="seccion-izquierda">
           <div class="contenedor-izquierdo">
@@ -86,7 +85,7 @@
                     <h3 class="titulo-principal">Skills</h3>
                     <ul>
                         <li>
-                            <p class="titulo-skill">Javascript</p>
+                            <p class="titulo-skill">Javascript <i class="fa-brands fa-js"></i></p>
                             <div class="barra-progreso">
                                 <div class="progreso js-progreso">
 
@@ -94,7 +93,7 @@
                             </div>
                         </li>
                         <li>
-                            <p class="titulo-skill">CSS</p>
+                            <p class="titulo-skill">CSS3 <i class="fa-brands fa-css3"></i></p>
                             <div class="barra-progreso">
                                 <div class="progreso css-progreso">
 
@@ -102,7 +101,7 @@
                             </div>
                         </li>
                         <li>
-                            <p class="titulo-skill">HTML</p>
+                            <p class="titulo-skill">HTML <i class="fa-brands fa-html5"></i></p>
                             <div class="barra-progreso">
                                 <div class="progreso html-progreso">
 
@@ -110,7 +109,7 @@
                             </div>
                         </li>
                         <li>
-                            <p class="titulo-skill">Java</p>
+                            <p class="titulo-skill">Java <i class="fa-brands fa-java"></i></p>
                             <div class="barra-progreso">
                                 <div class="progreso java-progreso">
 
@@ -118,7 +117,7 @@
                             </div>
                         </li>
                         <li>
-                            <p class="titulo-skill">Node Js</p>
+                            <p class="titulo-skill">Node Js <i class="fa-brands fa-node-js"></i></p>
                             <div class="barra-progreso">
                                 <div class="progreso nodejs-progreso">
 
@@ -126,7 +125,7 @@
                             </div>
                         </li>
                         <li>
-                            <p class="titulo-skill">MySQL</p>
+                            <p class="titulo-skill">MySQL <i class="fa-solid fa-database"></i></p>
                             <div class="barra-progreso">
                                 <div class="progreso mysql-progreso">
 
@@ -150,11 +149,11 @@
                         <p class="sub-parrafo">Product Manager</p>
                         <ul>
                             <li>
-                                <i class="fa fa-phone"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
                                     +549 341-6584213
                             </li>
                             <li>
-                                <i class="fa fa-fax"></i>
+                                <i class="fa-brands fa-google"></i>
                                 sr_burns@gmail.com
                             </li>
                         </ul>
@@ -164,15 +163,23 @@
                         <p class="sub-parrafo">Senior Developer</p>
                         <ul>
                             <li>
-                                <i class="fa fa-phone"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
                                     +549 341-4558764
                             </li>
                             <li>
-                                <i class="fa fa-fax"></i>
+                                <i class="fa-brands fa-google"></i>
                                 gorgory@gmail.com
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="descarga">
+                    <a href="cv.pdf" target=”_blank”></a>
+                        <button>
+                            Descargar CV <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        </a>
                 </div>
             </div>
         </section>
@@ -308,6 +315,9 @@
             </div>
         </section>
     </main>
+    <footer class="pie-pagina">
+        <button onclick="topFunction()" id="myBtn" title="ir arriba">Arriba</button>
+    </footer>
     <script src="js/scripts.js"></script>
 </body>
 </html>
