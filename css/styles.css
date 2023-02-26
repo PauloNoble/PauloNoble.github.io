@@ -10,10 +10,7 @@
 body{
     background-color: rgb(85, 245, 245);
 }
-
-body.dark{
-    background-color:#000;
-}
+ /* Sección Barra de navegación*/
 
 .cont-header{
     background: rgb(58, 93, 220);
@@ -44,6 +41,7 @@ body.dark{
     display: flex;
     list-style: none;
 }
+
 .cont-header header nav ul li a{
     text-align: none;
     color: rgb(220, 220, 224);
@@ -52,10 +50,12 @@ body.dark{
     transition: .5s;
     text-decoration: none;
 }
+
 .cont-header header nav ul li a:hover{
     color: #1CB698;
     box-shadow: 2px 5px 5px 0px rgb(85, 245, 245);
 }
+
 .nav-responsive{
     background-color: rgb(12, 238, 238);
     color:rgb(220, 220, 224);
@@ -65,20 +65,8 @@ body.dark{
     display: none;
 }
 
-body.dark .nav-responsive{
-    background-color: #444444;
-}
-
-body.dark .cont-header{
-    background-color: #222222;
-}
-
-body.dark nav a{
-    color: #c8c8c8;
-}
-
+/* Sección Boton modo nocturno*/
 .switch{
-   
     background-color: #343d5b;
     border-radius: 1000px;
     border: none;
@@ -113,7 +101,6 @@ body.dark nav a{
     left: unset;
 }
 
-
 .span{
     width: 30px;
     height: 30px;
@@ -123,23 +110,21 @@ body.dark nav a{
     color: #fff;
 }
 
+/* Sección Division del contenedor principal en columnas para cada contenedor*/
+
 .contenedor-principal{
     min-height: 100vh;
     width: 90%;
     top: 10px;
     margin: 4rem auto;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
+    grid-template-columns: repeat(7, 1fr);}
+
 
 .seccion-izquierda{
     grid-column: span 2;
     height: 100%;
     background-color: rgb(58, 93, 220);
-}
-
-body.dark section.seccion-izquierda{
-    background-color: #222222;
 }
 
 .seccion-derecha{
@@ -148,9 +133,8 @@ body.dark section.seccion-izquierda{
     background-color: rgb(253, 253, 255);
 }
 
-body.dark section.seccion-derecha{
-    background-color: #444444;
-}
+/* Sección Parte izquierda */
+
 .contenedor-izquierdo{
     padding: 1rem 1.5rem;
 }
@@ -189,9 +173,6 @@ body.dark section.seccion-derecha{
     padding-bottom: 1rem;
 }
 
-body.dark .carrera{
-    color: whitesmoke;
-}
 .titulo-principal{
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -209,10 +190,6 @@ body.dark .carrera{
     display: flex;
     align-items: center;
     color: #4aef3b;
-}
-
-body.dark .info-cont ul li{
-    color: whitesmoke;
 }
 
 .info-cont ul li i{
@@ -237,7 +214,6 @@ body.dark .info-cont ul li{
     background-color:whitesmoke;
     position: relative;
     border-radius: 12px;
-
 }
 
 .progreso{
@@ -248,9 +224,6 @@ body.dark .info-cont ul li{
     border-radius: 12px;
 }
 
-body.dark .progreso{
-    background-color: #343d5b;
-}
 .js-progreso{
     width: 70%;
 }
@@ -321,6 +294,9 @@ body.dark .progreso{
     position: relative;
     z-index: 10;
 }
+
+/* Sección Parte derecha*/
+
 .contenido-principal-derecho{
     padding: 2rem 3rem;
 }
@@ -331,10 +307,6 @@ body.dark .progreso{
     color: blueviolet;
     margin-bottom: 1.2rem;
     position: relative;
-}
-
-body.dark .titulo-derecho{
-    color: rgb(186, 136, 233);
 }
 
 .titulo-derecho::after{
@@ -372,20 +344,13 @@ body.dark .titulo-derecho{
     text-transform: uppercase;
 }
 
-body.dark .titulo-crono{
-    color: #9c4e4e;
-}
 .titulo-crono-2{
     letter-spacing: 1px;
     font-size: 1.3rem;
     color: rgb(8, 4, 252);
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
-body.dark .titulo-crono-2{
-    color: rgb(101, 100, 160);
-}
 .cont-crono{
     border-left: 1px solid wheat;
     position: relative;
@@ -403,6 +368,8 @@ body.dark .titulo-crono-2{
     left: 0;
     transform: translateX(-50%);    
 }
+
+/* Sección Botón scroll to top*/
 
 #myBtn {
     display: none; 
@@ -425,6 +392,57 @@ body.dark .titulo-crono-2{
     background-color: #555; 
   }
 
+/* Sección modo nocturno*/
+
+body.dark{
+    background-color:#000;
+}
+
+body.dark .nav-responsive{
+    background-color: #444444;
+}
+
+body.dark .cont-header{
+    background-color: #222222;
+}
+
+body.dark nav a{
+    color: #c8c8c8;
+}
+
+body.dark section.seccion-izquierda{
+    background-color: #222222;
+}
+
+body.dark section.seccion-derecha{
+    background-color: #444444;
+}
+
+body.dark .carrera{
+    color: whitesmoke;
+}
+
+body.dark .info-cont ul li{
+    color: whitesmoke;
+}
+
+body.dark .progreso{
+    background-color: #343d5b;
+}
+
+body.dark .titulo-derecho{
+    color: rgb(186, 136, 233);
+}
+
+body.dark .titulo-crono{
+    color: #9c4e4e;
+}
+
+body.dark .titulo-crono-2{
+    color: rgb(101, 100, 160);
+}
+
+
   body.dark #myBtn{
     background-color: #444444;
   }
@@ -432,6 +450,7 @@ body.dark .titulo-crono-2{
   body.dark #myBtn:hover{
     background-color: #9c4e4e
   }
+
 /*Seccion responsive*/
     
 @media screen and (max-width:1087px){
